@@ -37,14 +37,11 @@ Product.init(
     },
     category_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
+      references: {
+        model: 'category',
+        key: 'id',
+      }
     },
-    tag
-
-
-    
   },
   {
     sequelize,

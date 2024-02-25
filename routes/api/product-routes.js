@@ -6,12 +6,47 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // get all products
 router.get('/', (req, res) => {
   // find all products
+  // ('SELECT * ')
+  Product.findAll({
+    include: [
+      Category,
+      {
+        model:Tag,
+        through: ProductTag
+      }
+    ]
+  })
+  .then(results => {
+    res.json(results)
+  })
+  .catch((err)=>{
+    console.log(err);
+    res.status(500).json(err)
+  })
+
   // be sure to include its associated Category and Tag data
 });
 
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
+  Product.findByPk(req.params.id)
+    .then(results => {
+
+      console.log("this is results before serializing : ", results)
+      if(results === null){
+        return res.status(404).json({message: "No Product Found with that ID!"})
+      }
+     
+      const productData = results.get({plain:true}) //serializing
+
+      console.log("this is results for the product : ", productData)
+
+      res.status(200).json(productData)
+    }).catch((err) => {
+      console.log(err)
+      res.status(500).json(err)
+    })
   // be sure to include its associated Category and Tag data
 });
 
@@ -81,13 +116,14 @@ router.put('/:id', (req, res) => {
             ProductTag.destroy({ where: { id: productTagsToRemove } }),
             ProductTag.bulkCreate(newProductTags),
           ]);
-        });
+        })
       }
 
       return res.json(product);
     })
+ 
     .catch((err) => {
-      // console.log(err);
+      console.log(err);
       res.status(400).json(err);
     });
 });
