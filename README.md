@@ -1,7 +1,7 @@
 # ANG-Ecommerce
 
 ## Description
-The ANG Ecommerce app is a tool made with sequelize, inquirer, express.js and mySQL. It helps companies keep track of their products easily by letting them see and control product information on the back. It's made to be simple for ecommerce developers or store managers  easily access the backend to view product data and to keep all product information updated in a simple way. They can perform CRUD(Create,Read,Update,Delete) opperations such as view all current products, find products by categories or unique id, adding new products, update product information, and deleted produtcs in realtime via interactive API calls connected to the server.. 
+The ANG Ecommerce app is a tool made with sequelize, inquirer, express.js and mySQL. It helps companies keep track of their products easily by letting them see and control product information on the backend. It's made to be simple for e-commerce developers or store managers to  easily access the backend to view product data, and keep all product information updated in a simple way. They can perform CRUD operations (Create, Read, Update, Delete) to view all current products, find products by categories or unique id, add new products, update product information, and delete products in real-time via interactive API calls connected to the server.
 
 ## Table of contents
 - [Installation](#installation)
@@ -14,7 +14,7 @@ The ANG Ecommerce app is a tool made with sequelize, inquirer, express.js and my
 
 
 ## Installation
-1. Copy and paste repo in terminal
+1. Copy and paste the repo in the terminal
 2. Git clone https://github.com/AliahG97/ANG-ecommerce.git
 3. Run "npm install" to install the necessary dependencies, including inquirer version 8.2.4.
 4. Set up your mySQL database by importing the provided schema and seeds files.
@@ -31,7 +31,7 @@ https://aliahg97.github.io/ANG-ecommerce/ View MP4 Video HERE: https://youtu.be/
 
 2. GET product by id:Use the GET product by id API call to find a specific product by their unique product id.
 
-3. GET category:Use the GET category API call to find all categories. Search by "categories/id", to find a specific product in that category by their unique product id
+3. GET category: Use the GET category API call to find all categories. Search by "categories/id", to find a specific product in that category by their unique product id
 
 4. POST new product: Use the POST new product API call to create a new product.
 
@@ -41,26 +41,27 @@ https://aliahg97.github.io/ANG-ecommerce/ View MP4 Video HERE: https://youtu.be/
 
 
 ## Usage
-This app is ideal for an e-commerce developer or manger who wants to efficiently track and and update their product information in the online stores database.
+This app is ideal for an e-commerce developer or manager who wants to efficiently track and update their product information in the online store database.
 
 ## Credits
 Aliah Guerra (https://github.com/AliahG97)
 
 ## License
 Creative Commons License
-by Aliah Guerra2024. Confidential and Proprietary. All Rights Reserved.
+by Aliah Guerra 2024. Confidential and Proprietary. All Rights Reserved.
 
 ## Contributing
-- Add add a search by category name  api route instead of just search by category id (which is a foreign key referenceing the primary key from the product id).
+- Add front end code for the customers to see the product data as its updated in order to have a full stack ecommerce site with the working back end.
 
 ## Testing
 1. Cd to project file
-2. Npm install
+2. npm install
 3. npm run seed
 4. npm start
-5. run each API call/ route in Insomnia acccording to the appropriate route path (add id to search by id, category, update and delete)
+5. run each API call/ route in Insomnia according to the appropriate route path (add id to search by id, category, update, and delete)
 6. press send to run the request
-7. Search all products or search by id to verify new product created, updated, or deleted
+7. Search all products or search by id to verify new products created, updated, or deleted
+
 
 
 
