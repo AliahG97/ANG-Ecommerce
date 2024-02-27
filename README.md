@@ -29,7 +29,7 @@ https://aliahg97.github.io/ANG-ecommerce/ View MP4 Video HERE: https://youtu.be/
 
 1. GET all products: Use the GET all products API call to find all products.
 
-2. GET product by id:Use the GET product by id API call to find a specific product by their unique product id.
+2. GET product by id: Use the GET product by id API call to find a specific product by its unique product id.
 
 3. GET category: Use the GET category API call to find all categories. Search by "categories/id", to find a specific product in that category by their unique product id
 
@@ -61,7 +61,6 @@ by Aliah Guerra 2024. Confidential and Proprietary. All Rights Reserved.
 5. run each API call/ route in Insomnia according to the appropriate route path (add id to search by id, category, update, and delete)
 6. press send to run the request
 7. Search all products or search by id to verify new products created, updated, or deleted
-
 
 
 
