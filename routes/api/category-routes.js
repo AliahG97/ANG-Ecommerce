@@ -33,7 +33,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new category
   try {
-    const category = await Category.beforeBulkCreate(req.body);//create.(req.body)
+    const category = await Category.create(req.body);
     res(201).json(category);
   } catch (error) {
     res.status(400).json(error);
@@ -68,6 +68,7 @@ router.delete('/:id', async (req, res) => {
   } catch (error) {
     res.status(500).json(error);
   }
+  
 });
 
 module.exports = router;
