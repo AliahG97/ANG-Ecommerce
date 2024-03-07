@@ -21,7 +21,7 @@ The ANG Ecommerce app is a tool made with sequelize, inquirer, express.js and my
 5. Update the database connection details (PORT) in the application code.
 
 ## Screenshot
-![ReadMe Gen Screenshot](./Assets/ang-ecommerce-screenshot.gif)
+![ReadMe Gen Screenshot](./Assets/ang-ecommerce-screenshot.gif) See full video on youtube
 https://aliahg97.github.io/ANG-ecommerce/ View MP4 Video HERE: https://www.youtube.com/watch?v=0UEwKvscNws
 
 
