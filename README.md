@@ -22,11 +22,7 @@ The ANG Ecommerce app is a tool made with sequelize, inquirer, express.js and my
 
 ## Screenshot
 ![ReadMe Gen Screenshot](./Assets/ang-ecommerce-screenshot.gif)
-<<<<<<< HEAD
 https://aliahg97.github.io/ANG-ecommerce/ View MP4 Video HERE: https://www.youtube.com/watch?v=0UEwKvscNws
-=======
-https://aliahg97.github.io/ANG-Ecommerce/ View MP4 Video HERE: https://youtu.be/BWXoAra7djE
->>>>>>> 10573fd07c50c6690321ab1d72f3836c15073f94
 
 
 ## Features
